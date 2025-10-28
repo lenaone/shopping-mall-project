@@ -1,0 +1,237 @@
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    gap: 5px;
+}
+
+.login-button:hover {
+    color: #666;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+.menu-list li {
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.menu-list li:hover {
+    color: #666;
+}
+
+.menu-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 19px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-bar {
+    justify-content: flex-end;
+    position: absolute;
+    right: 20px;
+    gap: 5px;
+}
+
+.search-bar .fa-search {
+    color: #666;
+    font-size: 16px;
+}
+
+.search-bar-input {
+    padding: 8px 0;
+    padding-left: 5px;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    font-size: 14px;
+    background-color: transparent;
+    color: #333;
+}
+
+.search-bar-input::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+.card {
+    border: none !important;
+    margin-bottom: 10px;
+}
+
+.card-image:hover {
+  transform: scale(1.10);
+  cursor: pointer;
+}
+
+.choice {
+    font-size: 13px;
+    height: 20px;
+    color: #63786a;
+    font-weight: bold;
+}
+
+.login-link {
+    text-decoration: none;
+    cursor: pointer;   
+    color: black;
+}
+.login-link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-form {
+    width: 40rem;
+}
+
+.product-image {
+    display: flex;
+    justify-content: center;
+}
+
+.size-dropdown-toggle {
+    width: 80%;
+    height: 50px;
+    background-color: white !important;
+    border: 1px solid #ccc !important;
+    color: #333 !important;
+    padding: 12px 16px !important;
+    text-align: left !important;
+    font-size: 14px !important;
+    font-weight: normal;
+    border-radius: 0;
+}
+
+
+.size-dropdown-menu .dropdown-item {
+    padding: 12px 16px !important;
+    border-bottom: 1px solid #eee !important;
+    font-size: 14px;
+    color: #333;
+}
+
+.size-dropdown-menu .dropdown-item:hover {
+    background-color: #241f1f;
+    color: #242424;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #333;
+}
+
+.add-button {
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.product-image .col {
+    padding: 20px;
+}
+
+.product-image h5, .product-image div {
+    margin-bottom: 10px;
+}
+
+#dropdown-basic {
+    height: 50px;
+    background-color: white;
+    border: 1px solid #333;
+    color: #333;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.dropdown-menu {
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin-top: -1px;
+}
+
+.add-button.btn.btn-dark {
+    width: 100%;
+    background-color: #333 !important;
+    border: none !important;
+    color: white !important;
+    padding: 18px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    border-radius: 0 !important;
+    text-transform: none !important;
+    margin-top: 0 !important;
+}
+
+.add-button.btn.btn-dark:hover {
+    background-color: #555 !important;
+}
+
+.new-product-base {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.new-product {
+    width: 60px;
+}
+
+.new-product-details {
+    width: 60px;
+    padding: 4px 8px;
+    font-size: 12px;
+}          
