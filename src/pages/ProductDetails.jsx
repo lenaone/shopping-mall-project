@@ -2,16 +2,15 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Dropdown from "react-bootstrap/Dropdown";
+import { getProductById } from "../utils/api";
 
 const ProductDetails = () => {
   const [product, setProduct] = useState([]);
   const { id } = useParams();
 
   const getProductDetails = async () => {
-    let url = `http://localhost:4000/products/${id}`;
-    let response = await fetch(url);
-    let data = await response.json();
-    setProduct(data);
+    const data = await getProductById(id);
+    setProduct(data || {});
   };
 
   useEffect(() => {
