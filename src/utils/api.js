@@ -3,13 +3,13 @@ const API_BASE_URL = process.env.NODE_ENV === 'production'
   ? '/data'  // Use static files on Netlify
   : 'http://localhost:4000';
 
-export const getProducts = async () => {
+export const getProducts = async (searchQuery) => {
   try {
     let url;
     if (process.env.NODE_ENV === 'production') {
       url = '/data/products.json';
     } else {
-      url = `${API_BASE_URL}/products`;
+      url = `${API_BASE_URL}/products?q=${searchQuery}`;
     }
     
     const response = await fetch(url);

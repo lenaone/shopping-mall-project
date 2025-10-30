@@ -20,10 +20,10 @@ const ProductDetails = () => {
   return (
     <Container className="product-image">
       <Row>
-        <Col>
-          <img src={product.img} />
+        <Col md={6}>
+          <img className="product-details-image" src={product.img} alt={product.title || "Product"} />
         </Col>
-        <Col>
+        <Col md={6}>
           <div>{product.title}</div>
           {product?.new === true && <div className='new-product-base new-product-details'>신제품</div>}
           <div>₩{product.price}</div>
@@ -36,7 +36,7 @@ const ProductDetails = () => {
             <Dropdown.Menu>
               {product.size &&
                 product.size.map((sizeOption) => (
-                  <Dropdown.Item href={`#/size-${sizeOption}`}>
+                  <Dropdown.Item key={`size-${sizeOption}`} href={`#/size-${sizeOption}`}>
                     {sizeOption}
                   </Dropdown.Item>
                 ))}

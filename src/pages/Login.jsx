@@ -1,5 +1,5 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = ({ setAuthenticate }) => {
   const navigate = useNavigate();
@@ -7,7 +7,7 @@ const Login = ({ setAuthenticate }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setAuthenticate(true);
-    navigate('/');
+    navigate("/");
   };
 
   return (
