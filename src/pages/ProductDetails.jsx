@@ -6,18 +6,31 @@ import { getProductById } from '../utils/api';
 
 const ProductDetails = () => {
   const [product, setProduct] = useState([]);
+  const [loading, setLoading] = useState(false);
   const { id } = useParams();
 
   const getProductDetails = async () => {
+    setLoading(true);
     let url = `https://my-json-server.typicode.com/lenaone/shopping-mall-project/products/${id}`;
     let response = await fetch(url);
     let data = await response.json();
     setProduct(data || {});
+    setLoading(false);
   };
 
   useEffect(() => {
     getProductDetails();
   }, []);
+
+  if (loading || product === null) {
+    return (
+      <div className="spinner-container">
+        <div className="spinner-border" role="status">
+          <span className="visually-hidden">Loading..</span>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <Container className="product-image">
