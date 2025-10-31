@@ -32,6 +32,7 @@ const Navbar = ({ isAuthenticated, setAuthenticate }) => {
     if (e.key === 'Enter') {
       let keyword = e.target.value;
       navigate(`/?q=${keyword}`);
+      setSideMenuOpen(false);
     }
   };
   return (
@@ -85,6 +86,15 @@ const Navbar = ({ isAuthenticated, setAuthenticate }) => {
         >
           ×
         </button>
+        <div className="mobile-search-bar">
+          <FontAwesomeIcon icon={faSearch} />
+          <input
+            className="search-bar-input"
+            type="text"
+            placeholder="Search..."
+            onKeyPress={(e) => search(e)}
+          />
+        </div>
         <ul className="side-menu-list">
           {menuList.map((menu) => (
             <li key={menu}>{menu}</li>
